@@ -11,13 +11,13 @@ const defaultProps = {
   children: null
 };
 
-const Examples = {
-  ButtonGroup: (props) => { return <div className="group" {...props} />}
-};
+// const Examples = {
+//   ButtonGroup: (props) => { return <div className="group" {...props} />}
+// };
 
 
 const components = {
-  Examples,
+  Examples: (props) => { return <div className="Examples" {...props} />},
   ...Library,
 };
 
